@@ -1,0 +1,34 @@
+# baseURL
+@baseURL = http://localhost:3000
+
+###
+# Find All files and directories
+GET {{ baseURL }}/files
+
+###
+# Find All files and directories in a sub-directory
+GET {{ baseURL }}/files/foo/bar
+
+###
+# Find All files
+GET {{ baseURL }}/files?type=file
+
+###
+# Find All files in a sub-directory
+GET {{ baseURL }}/files/foo/bar?type=file
+
+###
+# Find All directories
+GET {{ baseURL }}/files?type=directory
+
+###
+# Find All directories in a sub-directory
+GET {{ baseURL }}/files/foo/bar?type=directory
+
+###
+# Find All files with stats
+GET {{ baseURL }}/files?type=file&stats=true
+
+###
+# Find All files with stats in a sub-directory
+GET {{ baseURL }}/files/foo/bar?type=file&stats=true

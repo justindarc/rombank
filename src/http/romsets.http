@@ -1,0 +1,34 @@
+# baseURL
+@baseURL = http://localhost:3000
+
+###
+# Find All ROMSets
+GET {{ baseURL }}/romsets
+
+###
+# Find ROMSet By Id
+GET {{ baseURL }}/romsets/1
+
+###
+# Create ROMSet
+POST {{ baseURL }}/romsets
+Content-Type: application/json
+
+{
+  "name": "aaa";
+  "path": "bbb";
+}
+
+###
+# Update ROMSet By Id
+PUT {{ baseURL }}/romsets/1
+Content-Type: application/json
+
+{
+  "name": "aaa";
+  "path": "bbb";
+}
+
+###
+# Delete ROMSet By Id
+DELETE {{ baseURL }}/romsets/1

@@ -1,0 +1,15 @@
+{
+    "env": "development",
+    "dbConfig": {
+        "database": "./rombank-development.db"
+    },
+    "secretKey": "secretKey",
+    "log": {
+        "format": "dev",
+        "dir": "./logs"
+    },
+    "cors": {
+        "origin": true,
+        "credentials": true
+    }
+}

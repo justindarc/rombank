@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Dev rombank",
+            "command": "npm run dev"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Start rombank",
+            "command": "npm run start"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Test rombank",
+            "command": "npm run test"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Lint rombank",
+            "command": "npm run lint"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Lint:Fix rombank",
+            "command": "npm run lint:fix"
+        }
+    ]
+}

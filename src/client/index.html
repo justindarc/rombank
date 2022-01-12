@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROMBank</title>
+  <link rel="stylesheet" href="./vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./vendor/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <h1>ROMBank</h1>
+
+  <hr>
+
+  <h2>ROM Sets</h2>
+
+  <table class="table table-sm table-hover align-middle">
+    <thead>
+      <tr>
+        <td>Actions</td>
+        <td>Name</td>
+        <td>Path</td>
+      </tr>
+    </thead>
+    <tbody id="tbody-romsets">
+    </tbody>
+  </table>
+
+  <form id="form-romset-create" action="/api/romsets" method="post">
+    <p>
+      <label for="input-romset-name">Name</label>
+      <input id="input-romset-name" class="form-control" type="text">
+    </p>
+    <p>
+      <label for="input-romset-path">Path</label>
+      <rb-remote-file-picker id="input-romset-path" root="/"></rb-remote-file-picker>
+    </p>
+    <button class="btn btn-primary" type="submit">Create ROM Set</button>
+  </form>
+
+  <br>
+
+  <rb-app></rb-app>
+
+  <script src="./vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
